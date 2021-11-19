@@ -5,4 +5,6 @@
     <string name="button_next">Next</string>
     <string name="button_cancel">Cancel</string>
     <string name="error_password">Password must contain al least 6 characters.</string>
+    <string name="product_title">Title</string>
+    <string name="product_description">Description Text</string>
 </resources>
