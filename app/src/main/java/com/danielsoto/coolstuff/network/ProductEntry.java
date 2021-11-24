@@ -62,5 +62,4 @@ public class ProductEntry {
 
         return gson.fromJson(jsonProductsString, productListType);
     }
-
 }

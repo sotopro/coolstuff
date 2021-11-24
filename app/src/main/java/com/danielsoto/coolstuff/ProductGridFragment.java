@@ -11,6 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.danielsoto.coolstuff.network.ProductEntry;
 
 public class ProductGridFragment extends Fragment {
 
@@ -26,6 +30,14 @@ public class ProductGridFragment extends Fragment {
         View view = inflater.inflate(R.layout.product_grid_fragment, container, false);
 
         setUpToolbar(view);
+
+        RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2, GridLayoutManager.VERTICAL, false));
+        ProductCardRecyclerViewAdapter adapter = new ProductCardRecyclerViewAdapter(
+                ProductEntry.initProductEntryList(getResources()));
+        recyclerView.setAdapter(adapter);
+
         return view;
     }
 
