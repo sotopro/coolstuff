@@ -25,7 +25,7 @@
         android:background="@android:color/white"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        app:layout_behavior="Product"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"

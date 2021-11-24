@@ -1,26 +1,28 @@
 package com.danielsoto.coolstuff;
 
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.danielsoto.coolstuff.network.ImageRequest;
+import com.danielsoto.coolstuff.network.ImageRequester;
 import com.danielsoto.coolstuff.network.ProductEntry;
 
 import java.util.List;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+
 public class ProductCardRecyclerViewAdapter extends RecyclerView.Adapter<ProductCardViewHolder> {
-    private  List<ProductEntry> productList;
-    private ImageRequest imageRequest;
+
+    private List<ProductEntry> productList;
+    private ImageRequester imageRequester;
 
     ProductCardRecyclerViewAdapter(List<ProductEntry> productList) {
         this.productList = productList;
-        imageRequest = ImageRequest.getInstance();
+        imageRequester = ImageRequester.getInstance();
     }
+
     @NonNull
     @Override
     public ProductCardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -30,14 +32,16 @@ public class ProductCardRecyclerViewAdapter extends RecyclerView.Adapter<Product
 
     @Override
     public void onBindViewHolder(@NonNull ProductCardViewHolder holder, int position) {
-        if(productList != null && position < productList.size()) {
+        if (productList != null && position < productList.size()) {
             ProductEntry product = productList.get(position);
             holder.productTitle.setText(product.title);
             holder.productPrice.setText(product.price);
-            imageRequest.setImageFromUrl(holder.productImage, product.url);
+            imageRequester.setImageFromUrl(holder.productImage, product.url);
         }
     }
 
     @Override
-    public int getItemCount() {return productList.size();}
+    public int getItemCount() {
+        return productList.size();
+    }
 }

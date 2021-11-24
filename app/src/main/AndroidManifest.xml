@@ -11,7 +11,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CoolStuff">
+        android:theme="@style/Theme.CoolStuff"
+        android:name="com.danielsoto.coolstuff.application.CoolStuffApplication"
+        >
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -33,7 +33,7 @@ public class ProductGridFragment extends Fragment {
 
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2, GridLayoutManager.VERTICAL, false));
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2, RecyclerView.VERTICAL, false));
         ProductCardRecyclerViewAdapter adapter = new ProductCardRecyclerViewAdapter(
                 ProductEntry.initProductEntryList(getResources()));
         recyclerView.setAdapter(adapter);
