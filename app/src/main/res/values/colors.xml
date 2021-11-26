@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#7c1ea3</color>
+    <color name="colorPrimaryDark">#4a0073</color>
+    <color name="colorPrimaryLight">#af52d5</color>
+    <color name="colorSecondary">#9575cd</color>
+    <color name="colorSecondaryLight">#c7a4ff</color>
+    <color name="colorSecondaryDark">#65499c</color>
+    <color name="colorTextPrimary">#ffffff</color>
+    <color name="colorTextSecondary">#000000</color>
+    <color name="colorAccent">#dadce0</color>
+    <color name="toolbarIconColor">#FFFFFF</color>
+    <color name="productGridBackgroundColor">#ffffff</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -8,4 +19,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="loginBackgroundColor">#FFFFFF</color>
+    <color name="textInputOutlineColor">#9575cd</color>
 </resources>
