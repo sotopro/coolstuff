@@ -8,7 +8,9 @@
     >
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        >
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/app_bar"
             style="@style/Widget.CoolStuff.Toolbar"
@@ -21,10 +23,11 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:background="@android:color/white"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/productGridBackgroundColor"
+        android:elevation="8dp"
+        android:paddingStart="@dimen/product_grid_spacing"
+        android:paddingEnd="@dimen/product_grid_spacing"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
         <androidx.recyclerview.widget.RecyclerView

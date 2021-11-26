@@ -21,6 +21,10 @@
         <item name="android:background">?attr/colorSecondary</item>
         <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/TextAppearance.CoolStuff.Toolbar</item>
+    </style>
+    <style name="TextAppearance.CoolStuff.Toolbar" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">16sp</item>
     </style>
     <style name="Widget.CoolStuff.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="hintTextAppearance">@style/TextAppearance.CoolStuff.TextInputLayout.HintText</item>
@@ -32,4 +36,10 @@
     <style name="TextAppearance.CoolStuff.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
+    <style name="TextAppearance.CoolStuff.Title" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
 </resources>
