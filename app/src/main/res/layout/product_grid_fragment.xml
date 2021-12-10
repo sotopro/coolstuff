@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ProductGridFragment"
     >
+    <LinearLayout
+        style="@style/Widget.CoolStuff.Backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingBottom="100dp"
+        >
+        <include layout="@layout/backdrop" />
+    </LinearLayout>
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,6 +39,7 @@
         android:elevation="8dp"
         android:paddingStart="@dimen/product_grid_spacing"
         android:paddingEnd="@dimen/product_grid_spacing"
+        android:visibility="gone"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
         <androidx.recyclerview.widget.RecyclerView

@@ -7,4 +7,11 @@
     <string name="error_password">Password must contain al least 6 characters.</string>
     <string name="product_title">Title</string>
     <string name="product_description">Description Text</string>
+    <!-- backdrop menu -->
+    <string name="backdrop_menu_category_label">Category</string>
+    <string name="backdrop_menu_featured_label">Featured</string>
+    <string name="backdrop_menu_accessories_label">Accessories</string>
+    <string name="backdrop_menu_shoes_label">Shoes</string>
+    <string name="backdrop_menu_tops_label">Tops</string>
+    <string name="backdrop_menu_account_label">Account</string>
 </resources>
