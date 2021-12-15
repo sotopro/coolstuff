@@ -32,6 +32,7 @@
             />
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/product_grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="56dp"
@@ -39,7 +40,6 @@
         android:elevation="8dp"
         android:paddingStart="@dimen/product_grid_spacing"
         android:paddingEnd="@dimen/product_grid_spacing"
-        android:visibility="gone"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
         <androidx.recyclerview.widget.RecyclerView

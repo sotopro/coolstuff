@@ -10,6 +10,7 @@
     <color name="colorTextSecondary">#000000</color>
     <color name="colorAccent">#dadce0</color>
     <color name="toolbarIconColor">#FFFFFF</color>
+    <color name="shapeBackgroundColor">#fffbfa</color>
     <color name="productGridBackgroundColor">#ffffff</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
