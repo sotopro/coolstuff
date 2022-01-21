@@ -16,7 +16,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table if not exists User (id integer primary key autoincrement, username text, passsword text)");
+        db.execSQL("create table if not exists User (id integer primary key autoincrement, username text, password text)");
     }
     @Override
     public void  onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
@@ -29,7 +29,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put("username", data.getUsername());
         contentValues.put("password", data.getPassword());
         long user = sqLiteDatabase.insert("User", null, contentValues);
-        if(user != 1) {
+        if(user != -1) {
             Log.e(TAG, "registerUser: User register successfully");
         } else {
             Log.e(TAG, "registerUser: error in register user...");

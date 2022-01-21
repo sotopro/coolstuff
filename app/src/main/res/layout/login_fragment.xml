@@ -35,6 +35,7 @@
             />
         <!-- Campos del formulario -->
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_text_input"
             style="@style/Widget.CoolStuff.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,6 +44,7 @@
             app:endIconMode="clear_text"
             >
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -72,21 +74,21 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/next_button"
+                android:id="@+id/button_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:text="@string/button_next" />
+                android:text="@string/button_login" />
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/cancel_button"
+                android:id="@+id/button_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:text="@string/button_cancel"
-                android:layout_toStartOf="@+id/next_button"
-                android:layout_toLeftOf="@id/next_button"
+                android:text="@string/button_register"
+                android:layout_toStartOf="@+id/button_login"
+                android:layout_toLeftOf="@id/button_login"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 />
         </RelativeLayout>
